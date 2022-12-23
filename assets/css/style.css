@@ -1,0 +1,652 @@
+/* Utility Classes */
+
+ul {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: red;
+  }
+  
+  header img{
+    max-width: 200px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  
+  table {
+    margin-top: 20px;
+    font-family: arial, sans-serif;
+    color: white;
+    border-collapse: collapse;
+    width: 700px;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: gray;
+  }
+  
+  .paragraph-header{
+    animation: 2s anim-lineUp ease-out;
+    animation-fill-mode: forwards;
+    color: white;
+    position: absolute;
+    top: 30px;
+    margin-left: 60px; 
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 8px #000;
+  }
+  
+  .paragraph-text{
+  position: absolute;
+  padding-right: 20px;
+  top: 70px;
+  width: 90%;
+  line-height: 30px;
+  text-shadow: 2px 2px 8px #000;
+  }
+  
+  /* Global Styles */
+  
+  * {
+      margin: 0;
+      padding: 0;
+  } 
+  
+  body{
+    background-color: black;
+    overflow-x: hidden;
+  }
+  
+  h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+  }
+  
+  p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: white
+  }
+  
+  nav {
+    display: inline;
+    max-width: 960px;
+    min-width: 500px;
+    margin: auto;
+    padding: 20px 0;
+  }
+  
+  nav ul {
+    text-align: center;  
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    padding: 5px;
+    text-transform:uppercase;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  nav ul li a:hover{
+    color: lightgrey;
+  }
+  
+  #first-section-image {
+    background: #000 center/cover url(../img/spacex-fade.png) no-repeat;
+    min-height: 850px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    
+  }
+  
+  .grounded-in-innovation{
+    animation: 2s anim-lineUp ease-out;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 220px;
+    left: 250px;
+    color: white;
+    font-family: 'Poppins';
+    z-index: 1;
+  }
+  
+  .dead-set-on-satisfaction {
+    animation: 6s anim-lineUp ease-out;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 320px;
+    left: 250px;
+    color: white;
+    font-family: 'Poppins';
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .btn {
+    animation: 9s anim-lineUp ease-out;
+    animation-fill-mode: forwards;
+    border: 2px solid white;
+    background-color: 00FFFFFF;
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    top: 400px;
+    left: 300px;
+  }
+  
+  .btn:hover {
+    border: 2px solid gray;
+    background-color: 00FFFFFF;
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: gray;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    top: 400px;
+    left: 300px;
+  }
+  
+  #second-section{
+    width: 100%;
+    height: 680px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    display: block;
+    margin-top: 100px;
+    
+  }
+  
+  .second-section-image{
+    float: right;
+  }
+  
+  #third-section{
+    background-color: #000;
+    width: 100%;
+    height: 3300px;
+    clear: both;
+  }
+  
+  #third-section h1{
+   color: white;
+   font-size: 3rem;
+   text-align: center;
+   padding: 20px;
+   padding-top: 300px;
+   text-shadow: 2px 2px 8px #000;
+  }
+  
+  #third-section h2{
+    color: white;
+    font-family: 'Poppins';
+    position: relative;
+    left: 70px;
+    display: block;
+    padding-top: 30px;
+    text-shadow: 2px 2px 8px #000;
+   }
+  
+  #third-section h3{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    padding-bottom: 50px;
+    position: relative;
+    text-align: center;
+    display: block;
+    text-shadow: 2px 2px 8px #000; 
+   }
+  
+  #third-section p{
+    width: 55%;
+    position: relative;
+    left: 70px;
+    padding-top: 20px;
+    display: block;
+    z-index: 1;
+    text-shadow: 2px 2px 8px #000;
+  }
+  
+  #third-section img{
+    clear: both;
+    position: absolute;
+    right: 0;
+    opacity: 0.7;
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+  }
+  
+  .footer{
+    background-color: rgb(37, 36, 36);
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    clear: both;
+  }
+  
+  .footer h1{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem; 
+  }
+  
+  #history h1{
+   animation: 2s anim-lineUp ease-out;
+   animation-fill-mode: forwards;
+   color: white;
+   font-size: 3rem;
+   text-align: center;
+   padding: 20px;
+   padding-top: 100px;
+  }
+  
+  #history p{
+    animation: 2s anim-lineUp ease-out;
+    animation-fill-mode: forwards;
+    width: 600px;
+    position: relative;
+    left: 70px;
+    padding-top: 20px;
+    display: block;
+    text-shadow: 2px 2px 8px #000;
+  }
+  
+  #history img{
+    float: left;
+    position: absolute;
+    right: 0;
+  }
+  
+  #recent-missions h1{
+   color: white;
+   font-size: 3rem;
+   text-align: center;
+   padding: 20px;
+   padding-top: 100px;
+  }
+  
+  #recent-missions table{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  
+  
+  /* FAQ */
+  
+  .background {
+    background-color: black;
+    color: white;
+    width: auto;
+    overflow-x: hidden;
+  }
+  
+  #frequently-asked-questions{
+    
+  }
+  
+  #frequently-asked-questions h1{
+    animation: 2s anim-lineUp ease-out;
+    animation-fill-mode: forwards;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+   }
+  
+  .faq-content {
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  
+  .faq-question {
+    animation: 2s anim-lineUp ease-out;
+    animation-fill-mode: forwards;
+    padding: 20px 0;
+    border-bottom: 1px solid #000;
+    width: 90%;
+  }
+  
+  .faq-question:hover {
+    padding: 20px 0;
+    border-bottom: 1px solid #000;
+    color: rgb(226, 221, 221)
+  }
+  
+  .panel {
+    display: none;
+  }
+  
+  .panel-title {
+    font-size: 24px;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 10px 10px 0 48px;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .panel-content {
+    font-size: 20px;
+    padding: 0px 14px;
+    margin: 0 40px;
+    height: 0;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    opacity: 0;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+  }
+  
+  .panel:checked ~ .panel-content{
+    height: auto;
+    opacity: 1;
+    padding: 14px;
+  }
+  
+  /* Animation */
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  
+  /* Media Queries */
+  
+  @media only screen and (max-width: 1209px) {
+    .grounded-in-innovation{
+      animation: 2s anim-lineUp ease-out;
+      animation-fill-mode: forwards;
+      position: absolute;
+      top: 220px;
+      left: 50px;
+      color: white;
+      font-family: 'Poppins';
+      z-index: 1;
+    }
+    
+    .dead-set-on-satisfaction {
+      animation: 6s anim-lineUp ease-out;
+      animation-fill-mode: forwards;
+      position: absolute;
+      top: 320px;
+      left: 50px;
+      color: white;
+      font-family: 'Poppins';
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+    }
+    .btn {
+      animation: 9s anim-lineUp ease-out;
+      animation-fill-mode: forwards;
+      border: 2px solid white;
+      background-color: 00FFFFFF;
+      font-family: 'Poppins';
+      text-decoration: none;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 1;
+      position: absolute;
+      top: 400px;
+      left: 50px;
+    }
+    
+    .btn:hover {
+      border: 2px solid gray;
+      background-color: 00FFFFFF;
+      font-family: 'Poppins';
+      text-decoration: none;
+      color: gray;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 1;
+      position: absolute;
+      top: 400px;
+      left: 50px;
+    }
+  
+    .second-section-image{
+      float: right;
+      opacity: 0.8;
+  
+    }
+  
+    #third-section img{
+      clear: both;
+      position: absolute;
+      right: 0;
+      opacity: 0.5;
+    }
+  
+    #history p{
+      animation: 2s anim-lineUp ease-out;
+      animation-fill-mode: forwards;
+      width: 600px;
+      position: relative;
+      left: 70px;
+      padding-top: 20px;
+      display: block;
+      text-shadow: 2px 2px 8px #000;
+    }
+    
+    #history img{
+      float: left;
+      position: absolute;
+      right: 0;
+      opacity: 0.7;
+    }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    #third-section img{
+      clear: both;
+      position: absolute;
+      right: 0;
+      opacity: 0;
+    }
+  }
+  
+    .second-section-image{
+      float: right;
+      opacity: 0.8;
+  }
+  
+  @media only screen and (max-width: 817px) {
+    .grounded-in-innovation{
+      position: absolute;
+      top: 220px;
+      left: 0px;
+      margin-left: 20px;
+     
+    }
+  
+    .dead-set-on-satisfaction{
+      position: absolute;
+      left: 0px;
+      margin-left: 20px;
+      top: 320px; 
+    }
+  
+    .btn {
+      animation: 9s anim-lineUp ease-out;
+      animation-fill-mode: forwards;
+      border: 2px solid white;
+      background-color: 00FFFFFF;
+      font-family: 'Poppins';
+      text-decoration: none;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 1;
+      position: absolute;
+      top: 400px;
+      left: 0px;
+      margin-left: 20px;
+    }
+    
+    .btn:hover {
+      border: 2px solid gray;
+      background-color: 00FFFFFF;
+      font-family: 'Poppins';
+      text-decoration: none;
+      color: gray;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 1;
+      position: absolute;
+      top: 400px;
+      left: 0px;
+      margin-left: 20px;
+    }
+  
+    #first-section-image {
+      background: #000 center/cover url(../img/spacex-fade.png) no-repeat;
+      min-height: 850px;
+      background-position: left 42% bottom 45%;
+      background-repeat: no-repeat;
+      
+      position: relative;
+      margin: auto;
+      
+    }
+  
+    #third-section p{
+      width: 80%;
+      position: relative;
+      left: 70px;
+      padding-top: 20px;
+      display: block;
+      z-index: 1;
+      text-shadow: 2px 2px 8px #000;
+    }
+  
+    .second-section-image{
+      float: right;
+      opacity: 0.8;
+  
+    }
+  
+    #third-section img{
+      clear: both;
+      position: absolute;
+      right: 0;
+      opacity: 0;
+    }
+  
+    #history p{
+      animation: 2s anim-lineUp ease-out;
+      animation-fill-mode: forwards;
+      width: 600px;
+      position: relative;
+      left: 70px;
+      width: 70%;
+      padding-top: 20px;
+      display: block;
+      text-shadow: 2px 2px 8px #000;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .grounded-in-innovation{
+      position: absolute;
+      top: 120px;
+      left: 0px;
+      margin-left: 40px;
+     
+    }
+  
+    .dead-set-on-satisfaction{
+      position: absolute;
+      left: 0px;
+      margin-left: 40px;
+      top: 220px;
+  
+      
+    }
+  
+    #first-section-image {
+      background: #000 center/cover url(../img/spacex-mobile-hero.png) no-repeat;
+      
+    }
+  
+    .second-section-image{
+      float: right;
+      opacity: 0;
+    }
+  
+    .btn {
+      animation: 9s anim-lineUp ease-out;
+      animation-fill-mode: forwards;
+      border: 2px solid white;
+      background-color: 00FFFFFF;
+      font-family: 'Poppins';
+      text-decoration: none;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 1;
+      position: absolute;
+      top: 310px;
+      left: 40px;
+    }
+    
+  }
